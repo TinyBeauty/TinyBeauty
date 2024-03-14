@@ -285,7 +285,7 @@ Extensive experiments show that DAL can produce highly competitive makeup models
         <h2 class="title is-3">Method</h2>
       </div>
     </div>
-    <h1 class="title is-3">Diffusion-based Data Amplifier</h1>
+    <h1 class="title is-4">Diffusion-based Data Amplifier</h1>
       <div class="content has-text-justified">
         <p>
           To generate high-quality paired makeup data, our Diffusion-based Data Amplifier(DDA) is required to contain the subject's original facial features, skin texture details, such as wrinkles and spots, and consistent, precise makeup styles across various portraits.
@@ -298,14 +298,17 @@ Extensive experiments show that DAL can produce highly competitive makeup models
           Overview of the Diffusion-based Data Amplifier (DDA).
         </h2>
       </div>
-    <h1 class="title is-3">TinyBeauty Model</h1>
+    <h2 class="title is-4">TinyBeauty Model</h2>
     <div class="content has-text-justified">
       <p>
         Benefiting from DDA-generated paired data, the TinyBeauty Model sidesteps previous laborious pre-processing by directly applying L1 loss aligning generated images closely with their targets, which can be designed as a hardware-friendly network optimized for resource-constrained devices.
       </p>
     </div>
     <div class="hero-body">
-      <img src="static/images/Para.jpg" alt="" style="width: 80%; height: auto;">
+      <div style="text-align: center;">
+        <img src="static/images/Para.jpg" alt="" style="width: 80%; height: auto;">
+      </div>
+      <!-- <img src="static/images/Para.jpg" alt="" style="width: 80%; height: auto;"> -->
       <h2 class="subtitle has-text-centered">
         Parameters, FLOPs, and runtimes on an iPhone13 of TinyBeauty and competing methods. (+) means the method
         uses facial pre-processing including face parsing, and (-) means the method only has a single model.
