@@ -6,7 +6,7 @@
 
 Our TinyBeauty effectively synthesizes stunning makeup styles with consistent content, enabling seamless video application.
 
-<img src='assets/images/top.png'>
+<img src='static/images/top.png'>
 
 ## Release
 - [2024/04/03] 🔥 We launch the [project page](https://tinybeauty.github.io/TinyBeauty/).
@@ -17,31 +17,31 @@ Our TinyBeauty effectively synthesizes stunning makeup styles with consistent co
 ### High-quality Facial Makeup
 
 <p align="center">
-  <img src="assets/images/res_diff.png">
+  <img src="static/images/res_diff.png">
 </p>
 
 Our DDA generates consistent makeup styles while retain the facial content and identity of the original image
 
 <p align="center">
-  <img src="assets/images/hrd.png">
+  <img src="static/images/hrd.png">
 </p>
 Facial makeup results on high-resolution (1024*1024) images.
 
 ### Comparison with Previous Works
 <p align="center">
-  <img src="assets/images/res_FFHQ.png">
+  <img src="static/images/res_FFHQ.png">
 </p>
 
 Visual comparison of TineBeauty and competing methods on the FFHQ Dataset.
 
 <p align="center">
-  <img src="assets/images/MT_res.png">
+  <img src="static/images/MT_res.png">
 </p>
 
 Visual comparison of TineBeauty and competing methods on the MT Dataset.
 
 <p align="center">
-  <img src="assets/images/hard.png">
+  <img src="static/images/hard.png">
 </p>
 
 Visual comparison of TineBeauty and BeautyREC on challenging out-of-distribution examples
