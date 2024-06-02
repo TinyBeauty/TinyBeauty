@@ -9,10 +9,11 @@ Our TinyBeauty effectively synthesizes stunning makeup styles with consistent co
 <img src='static/images/top.png'>
 
 ## Release
+- [2024/06/02] 🔥 We release the [source code](https://github.com/TinyBeauty/TinyBeauty).
 - [2024/04/03] 🔥 We launch the [project page](https://tinybeauty.github.io/TinyBeauty/).
 - [2024/03/22] 🔥 We release the [technical report](https://arxiv.org/abs/2403.15033).
 
-## Demos
+## Visual Results
 
 ### High-quality Facial Makeup
 
@@ -50,3 +51,40 @@ Visual comparison of TineBeauty and BeautyREC on challenging out-of-distribution
 ## Usage
 
 ### Prepare data
+
+Download sample image pair and makeup style template from  [here](https://drive.google.com/file/d/14rEFhVtQbNpBL6tPB49kpOsCF3INX8Wl/view?usp=sharing), and place it in the `./data` folder.
+
+### Finetune
+
+```shell
+python SD_finetune.py 
+    -m runwayml/stable-diffusion-v1-5
+    -e h94/IP-Adapter
+    -nonmakeup data/Finetune_Data/train
+    -makeup data/Finetune_Data/train_purple
+    -o "$LORA_MODEL_SAVE_PATH"
+```
+
+### Inference
+
+```shell
+python SD_inference.py
+    -m "$LORA_MODEL_SAVE_PATH"
+    -s data/Finetune_Data/purple.png
+    -d data/Finetune_Data/test
+    -o res/test1
+```
+
+## Cite
+If you find TinyBeauty useful for your research and applications, please cite us using this BibTeX:
+
+```bibtex
+@misc{jin2024tiny,
+      title={Toward Tiny and High-quality Facial Makeup with Data Amplify Learning}, 
+      author={Qiaoqiao Jin and Xuanhong Chen and Meiguang Jin and Ying Cheng and Rui Shi and Yucheng Zheng and Yupeng Zhu and Bingbing Ni},
+      year={2024},
+      eprint={2403.15033},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```

@@ -1,0 +1,7 @@
+__pycache__/
+__MACOSX/
+.idea/
+
+data/*
+lora_makeup/
+res/
