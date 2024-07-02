@@ -3,7 +3,7 @@
 <b>Accepted by ECCV2024</b>
   
 <a href='https://tinybeauty.github.io/TinyBeauty/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
-<a href='https://arxiv.org/abs/2403.15033'><img src='https://img.shields.io/badge/Technique-Report-red'></a>
+<a href='https://arxiv.org/abs/2403.15033'><img src='https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg'></a>
 </div>
 
 Our TinyBeauty effectively synthesizes stunning makeup styles with consistent content, enabling seamless video application.
