@@ -1,5 +1,5 @@
 <div align="center">
-<h1>TinyBeauty: Toward Tiny and High-quality Facial Makeup with Data Amplify Learning</h1>
+<h1>[ECCV2024] TinyBeauty: Toward Tiny and High-quality Facial Makeup with Data Amplify Learning</h1>
 <b>Accepted by ECCV2024</b>
   
 <a href='https://tinybeauty.github.io/TinyBeauty/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
