@@ -1,6 +1,6 @@
 <div align="center">
 <h1>[ECCV2024] TinyBeauty: Toward Tiny and High-quality Facial Makeup with Data Amplify Learning</h1>
-Official PyTorch implementation of Toward Tiny and High-quality Facial Makeup with Data Amplify Learning [ECCV2024].
+Official PyTorch implementation of <a href='https://arxiv.org/abs/2403.15033'>Toward Tiny and High-quality Facial Makeup with Data Amplify Learning [ECCV2024]</a>.
   
 <a href='https://tinybeauty.github.io/TinyBeauty/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
 <a href='https://arxiv.org/abs/2403.15033'><img src='https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg'></a>
