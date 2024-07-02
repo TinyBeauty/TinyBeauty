@@ -1,6 +1,7 @@
 <div align="center">
 <h1>TinyBeauty: Toward Tiny and High-quality Facial Makeup with Data Amplify Learning</h1>
   Accepted by ECCV2024
+  
 <a href='https://tinybeauty.github.io/TinyBeauty/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
 <a href='https://arxiv.org/abs/2403.15033'><img src='https://img.shields.io/badge/Technique-Report-red'></a>
 </div>
