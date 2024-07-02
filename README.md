@@ -11,9 +11,9 @@ Our TinyBeauty effectively synthesizes stunning makeup styles with consistent co
 <img src='static/images/top.png'>
 
 ## Release
-- [2024/06/02] 🔥 We release the [source code](https://github.com/TinyBeauty/TinyBeauty).
-- [2024/04/03] 🔥 We launch the [project page](https://tinybeauty.github.io/TinyBeauty/).
-- [2024/03/22] 🔥 We release the [technical report](https://arxiv.org/abs/2403.15033).
+- [2024/06/02] 🔥 We release the [Source Code](https://github.com/TinyBeauty/TinyBeauty).
+- [2024/04/03] 🔥 We launch the [Project Page](https://tinybeauty.github.io/TinyBeauty/).
+- [2024/03/22] 🔥 We release the [Arxiv](https://arxiv.org/abs/2403.15033).
 
 ## Visual Results
 
