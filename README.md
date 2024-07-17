@@ -11,7 +11,7 @@ Our TinyBeauty effectively synthesizes stunning makeup styles with consistent co
 <img src='static/images/top.png'>
 
 ## Release
-- [2024/07/17] 🔥 We release the [Pretrained Lightweight Model and Demo](https://github.com/TinyBeauty/TinyBeauty/tree/main/Demo).
+- [2024/07/17] 🔥 We release the [Pretrained Lightweight Model and Demo](https://github.com/TinyBeauty/TinyBeauty/tree/main/Demo) for quick test.
 - [2024/06/02] 🔥 We release the [Source Code](https://github.com/TinyBeauty/TinyBeauty).
 - [2024/04/03] 🔥 We launch the [Project Page](https://tinybeauty.github.io/TinyBeauty/).
 - [2024/03/22] 🔥 We release the [Arxiv](https://arxiv.org/abs/2403.15033).
@@ -55,7 +55,7 @@ Visual comparison of TineBeauty and BeautyREC on challenging out-of-distribution
 
 ### Demo
 
-First you should make sure you have install gradio.
+First you should make sure you have installed gradio.
 
 ```shell
 cd Demo
