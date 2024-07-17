@@ -53,6 +53,15 @@ Visual comparison of TineBeauty and BeautyREC on challenging out-of-distribution
 
 ## Usage
 
+### Demo
+
+First you should make sure you have install gradio.
+
+```shell
+cd Demo
+python gradio_test.py 
+```
+
 ### Prepare data
 
 Download sample image pair and makeup style template from  [here](https://drive.google.com/file/d/14rEFhVtQbNpBL6tPB49kpOsCF3INX8Wl/view?usp=sharing), and place it in the `./data` folder.
