@@ -194,6 +194,12 @@ def parse_args(input_args=None):
         help="Scale the learning rate by the number of GPUs, gradient accumulation steps, and batch size.",
     )
     parser.add_argument(
+        "--use_mask",
+        action="store_true",
+        default=False,
+        help="Use mask guidance to finetune the SD model",
+    )
+    parser.add_argument(
         "--lr_scheduler",
         type=str,
         default="constant",
@@ -626,7 +632,10 @@ def main(args):
                 else:
                     raise ValueError(f"Unknown prediction type {noise_scheduler.config.prediction_type}")
 
-                loss = F.mse_loss(model_pred.float(), target.float(), reduction="mean")
+                if args.use_mask:
+                    loss = F.mse_loss(model_pred.float()*latent_mask["changed"], target.float()*latent_mask["changed"], reduction="mean")
+                else:
+                    loss = F.mse_loss(model_pred.float(), target.float(), reduction="mean")
 
                 w = random.randint(0, 64 - crop_size)
                 h = random.randint(0, 64 - crop_size)
@@ -638,7 +647,10 @@ def main(args):
                 model_pred_crop = unet(crop_noisy_latents, timesteps, encoder_hidden_states).sample
                 target = target[:, :, w:w + crop_size, h:h + crop_size]
 
-                temporal_loss = F.mse_loss(model_pred_crop.float(), target.float(), reduction="mean")
+                if args.use_mask:
+                    temporal_loss = F.mse_loss(model_pred_crop.float()*crop_mask, target.float()*crop_mask, reduction="mean")
+                else:
+                    temporal_loss = F.mse_loss(model_pred_crop.float(), target.float(), reduction="mean")
 
                 loss += 5 * temporal_loss
 
