@@ -13,7 +13,7 @@ def label_mask(array):
     new_labels = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     # 将非零元素映射到新标签
     for new_label in new_labels:
-        label_array[array == new_label] = 1
+        label_array[array == new_label] = new_label
     return label_array
 
 def get_mask(image_path, save_path):
@@ -37,7 +37,7 @@ def get_mask(image_path, save_path):
     vis_img = vis_seg_probs.sum(0, keepdim=True)
     print(image_path)
     mask = label_mask(vis_img.cpu().numpy())
-    mask = cv2.GaussianBlur(mask[0], (11, 11), 0)*255
+    mask = cv2.GaussianBlur(mask[0], (11, 11), 0)
     print(mask.shape)
     cv2.imwrite(save_path, cv2.resize(mask, (h, w)))
     
